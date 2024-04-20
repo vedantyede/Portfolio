@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply p-0 m-0 box-border font-dmsans
+    }
+
+    html {
+        @apply scroll-smooth snap-y snap-mandatory max-h-screen overflow-y-scroll p-0 m-0
+    }
+
+    body {
+        @apply bg-darkBlueBg text-lightGrayText
+    }
+
+    section {
+        @apply snap-start h-screen w-full
+    }
+
+    a {
+        @apply no-underline
+    }
+}
