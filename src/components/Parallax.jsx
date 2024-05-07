@@ -24,17 +24,17 @@ const Parallax = ({ type }) => {
       </motion.h1>
       <motion.div
         style={{ x: yBg }}
-        className="bg-[url('/stars.png')] bg-cover bg-bottom w-full h-full absolute"
+        className="bg-[url('./stars.png')] bg-cover bg-bottom w-full h-full absolute"
       ></motion.div>
       <motion.div
         style={{ y: yBg }}
         className={`${
           type === "services"
-            ? 'bg-[url("/planets.png")]'
-            : 'bg-[url("/sun.png")]'
+            ? 'bg-[url("./planets.png")]'
+            : 'bg-[url("./sun.png")]'
         } bg-cover bg-bottom w-full h-full absolute`}
       ></motion.div>
-      <motion.div className="bg-[url('/mountains.png')] bg-cover bg-bottom w-full h-full absolute"></motion.div>
+      <motion.div className="bg-[url('./mountains.png')] bg-cover bg-bottom w-full h-full absolute"></motion.div>
     </div>
   );
 };

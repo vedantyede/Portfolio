@@ -73,7 +73,7 @@ const Hero = () => {
             variants={textVariants}
             initial="initial"
             animate="scrollButton"
-            src="/scroll.png"
+            src="./scroll.png"
             alt=""
             className="w-12"
           />
@@ -88,7 +88,7 @@ const Hero = () => {
         Full Stack Developer
       </motion.div>
       <div className="h-full absolute top-0 right-24 ">
-        <img src="/hero.png" alt="" />
+        <img src="./hero.png" alt="" />
       </div>
     </div>
   );
