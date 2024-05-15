@@ -11,7 +11,7 @@ const Sidebar = () => {
       transition:{
         type: "spring",
         stiffness: 80,
-        damping: 40,
+        damping: 10,
       }
     },
     closed: {
@@ -19,7 +19,7 @@ const Sidebar = () => {
       transition:{
         delay: 0.2,
         type: "spring",
-        stiffness: 400,
+        stiffness: 500,
         damping: 40,
       }
     },

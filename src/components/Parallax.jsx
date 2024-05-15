@@ -32,12 +32,12 @@ const Parallax = ({ type }) => {
             : 'bg-[url("./sun.png")]'
         } bg-cover bg-bottom w-full h-full absolute`}
       ></motion.div>
-      <motion.div className="bg-[url('./mountains.png')] bg-cover bg-bottom w-full h-full absolute"></motion.div>
+      <motion.div className="bg-[url('./mountains.png')] bg-cover sm:mt-0 mt-12 bg-bottom w-full h-full absolute"></motion.div>
       <motion.h1 style={{ y: yText }} className="">
-        <div className="text-8xl text-white font-bold">
-          {type == "About Me" ? "ABOUT ME" : "What I Did !"}
+        <div className="text-8xl text-slate-400 font-bold">
+          {type == "About Me" ? "ABOUT ME" : "MY WORK"}
         </div>
-        <div className="text-white sm:text-purple-400 max-w-3xl">
+        <div className="max-w-3xl text-slate-200">
           {type == "About Me"
             ? "Highly skilled Frontend Developer with 3 years of experience in building and maintaining scalable web applications using ReactJS. Proficient in integrating RESTful APIs, implementing state management with Redux, and applying modern frontend technologies. Strong problem-solving skills and a collaborative team player with a focus on delivering high-quality code and user experiences."
             : ""}

@@ -18,9 +18,10 @@ const App = () => {
       <section>
         <Education />
       </section>
-      <section id="Portfolio">
-        <Parallax type="portfolio" />
+      <section id="My Work">
+        <Parallax type="My Work" />
       </section>
+      <section>Experience</section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
       <section>Portfolio3</section>
