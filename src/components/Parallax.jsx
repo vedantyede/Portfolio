@@ -9,32 +9,40 @@ const Parallax = ({ type }) => {
   });
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const yBg2 = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
 
   return (
     <div
       ref={ref}
       className={`overflow-hidden h-full w-full flex items-center justify-center ${
-        type === "services"
+        type === "About Me"
           ? "bg-gradient-to-b from-lightDarkBlueBg to-darkBlueBg"
           : "bg-gradient-to-b from-darkBlueBg to-lightDarkBlueBg"
       }`}
     >
-      <motion.h1 style={{ y: yText }} className="text-8xl">
-        {type == "services" ? "What we Do?" : "What we Did?"}
-      </motion.h1>
-      <motion.div
-        style={{ x: yBg }}
+      {/* <motion.div
+        style={{ y: yBg2 }}
         className="bg-[url('./stars.png')] bg-cover bg-bottom w-full h-full absolute"
-      ></motion.div>
+      ></motion.div> */}
       <motion.div
-        style={{ y: yBg }}
+        style={{ y: yBg2 }}
         className={`${
-          type === "services"
+          type === "About Me"
             ? 'bg-[url("./planets.png")]'
             : 'bg-[url("./sun.png")]'
         } bg-cover bg-bottom w-full h-full absolute`}
       ></motion.div>
       <motion.div className="bg-[url('./mountains.png')] bg-cover bg-bottom w-full h-full absolute"></motion.div>
+      <motion.h1 style={{ y: yText }} className="">
+        <div className="text-8xl text-white font-bold">
+          {type == "About Me" ? "ABOUT ME" : "What I Did !"}
+        </div>
+        <div className="text-white sm:text-purple-400 max-w-3xl">
+          {type == "About Me"
+            ? "Highly skilled Frontend Developer with 3 years of experience in building and maintaining scalable web applications using ReactJS. Proficient in integrating RESTful APIs, implementing state management with Redux, and applying modern frontend technologies. Strong problem-solving skills and a collaborative team player with a focus on delivering high-quality code and user experiences."
+            : ""}
+        </div>
+      </motion.h1>
     </div>
   );
 };

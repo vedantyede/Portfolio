@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="">
-      <div className="flex justify-around items-center h-20">
+      <div className="flex flex-col sm:flex-row justify-around items-center h-20">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}

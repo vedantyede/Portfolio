@@ -38,7 +38,7 @@ const sliderScroll = {
 
 const Hero = () => {
   return (
-    <div className="h-[calc(100vh-96px)] bg-gradient-to-b from-darkBlueBg to-lightDarkBlueBg overflow-hidden relative">
+    <div className="h-[calc(100vh-80px)] bg-gradient-to-b from-darkBlueBg to-lightDarkBlueBg overflow-hidden relative">
       <div className="max-w-7xl h-full m-auto ">
         <motion.div
           className="h-full flex flex-col justify-center gap-10"
@@ -52,7 +52,7 @@ const Hero = () => {
           >
             VEDANT YEDE
           </motion.h2>
-          <motion.h1 className="text-7xl font-bold" variants={textVariants}>
+          <motion.h1 className="w-10 lg:w-full text-7xl font-bold" variants={textVariants}>
             Frontend Developer
           </motion.h1>
           <motion.div className="" variants={textVariants}>
@@ -87,7 +87,7 @@ const Hero = () => {
       >
         Full Stack Developer
       </motion.div>
-      <div className="h-full absolute top-0 right-24 ">
+      <div className="hidden sm:block h-full absolute top-0 right-24 ">
         <img src="./hero.png" alt="" />
       </div>
     </div>

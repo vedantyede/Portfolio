@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Parallax from "./components/Parallax";
 import Sidebar from "./components/Sidebar";
-import Services from "./components/Services";
+import Education from "./components/Education";
 
 const App = () => {
   return (
@@ -11,13 +11,12 @@ const App = () => {
       <section id="Homepage">
         <Navbar />
         <Hero />
-        <Sidebar />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+      <section id="About Me">
+        <Parallax type="About Me" />
       </section>
       <section>
-        <Services />
+        <Education />
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
@@ -26,6 +25,7 @@ const App = () => {
       <section>Portfolio2</section>
       <section>Portfolio3</section>
       <section id="Contact">Contact</section>
+      <Sidebar />
     </div>
   );
 };
