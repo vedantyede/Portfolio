@@ -57,13 +57,13 @@ const Hero = () => {
           </motion.h1>
           <motion.div className="" variants={textVariants}>
             <motion.button
-              className="z-1 p-5 mr-2 border rounded-md cursor-pointer"
+              className="z-50 p-5 mr-2 border rounded-md cursor-pointer"
               variants={textVariants}
             >
               See the Latest Works
             </motion.button>
             <motion.button
-              className="z-1 p-5 ml-2 border rounded-md cursor-pointer bg-white text-black"
+              className="z-50 80 p-5 ml-2 border rounded-md cursor-pointer bg-white text-black absolute"
               variants={textVariants}
             >
               Contact Me

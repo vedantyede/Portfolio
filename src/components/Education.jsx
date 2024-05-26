@@ -69,7 +69,7 @@ const Education = () => {
     <div ref={setRef} style={{ minHeight: "100vh" }}>
       {isIntersecting && (
         <Suspense fallback={<div>Loading...</div>}>
-          <div className="bg-gradient-to-b to-darkBlueBg from-lightDarkBlueBg overflow-hidden relative">
+          <div className="bg-gradient-to-b from-darkBlueBg to-lightDarkBlueBg overflow-hidden relative">
             <div className="h-screen w-full flex flex-col justify-center items-center">
               <div className="text-5xl sm:text-8xl font-bold">EDUCATION</div>
               <div className="rounded-lg shadow-lg p-10 w-full">
