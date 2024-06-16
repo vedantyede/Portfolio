@@ -62,12 +62,14 @@ const Hero = () => {
             >
               See the Latest Works
             </motion.button>
+            <a href="#Contact">
             <motion.button
               className="z-50 80 p-5 ml-2 border rounded-md cursor-pointer bg-white text-black absolute"
               variants={textVariants}
             >
               Contact Me
             </motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}
