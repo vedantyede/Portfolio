@@ -7,26 +7,21 @@ const items = [
     title: "Portfolio Website",
     img: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Developed a personal portfolio website using ReactJS, Tailwind CSS, and Framer Motion libraries. This project aimed to showcase my frontend development skills with a responsive layout and modern design. Utilizing Tailwind CSS for rapid styling, I integrated smooth animations with Framer Motion to enhance user engagement. This project highlights my ability to create dynamic and user-centric web experiences.",
-    visit: "https://vedantyede.github.io/Portfolio/",
+    visit: "https://vedantyede.netlify.app/",
   },
   {
     id: 2,
-    title: "Ecommerce",
+    title: "E-commerce App",
     img: "https://plus.unsplash.com/premium_photo-1683758342885-7acf321f5d53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Develop a furniture e-commerce website, using ReactJS, Tailwind CSS, and Framer Motion for the frontend, and Node.js with Express and MongoDB for the backend. This project prioritized a modern and intuitive user interface, ensuring seamless navigation. Backend integration with Node.js and Express facilitated efficient data processing and inventory management, while MongoDB ensured scalability. Employing responsive design principles, I optimized the website for diverse devices, showcasing my proficiency in full-stack web development.",
-    visit: "https://vedantyede.github.io/E-commerce-Furnik/",
+    visit: "https://furnik.netlify.app/",
   },
   // {
   //   id: 3,
-  //   title: "Finance App",
-  //   img: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   desc: "Finance App website for a bank, built with React.",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Camera App",
-  //   img: "https://plus.unsplash.com/premium_photo-1683758342885-7acf321f5d53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   desc: "Camera App website for a photographer, built with React.",
+  //   title: "Weather App",
+  //   img: "https://images.unsplash.com/photo-1614480633894-f3b7f4bb0e76?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   desc: "Develop a furniture e-commerce website, using ReactJS, Tailwind CSS, and Framer Motion for the frontend, and Node.js with Express and MongoDB for the backend. This project prioritized a modern and intuitive user interface, ensuring seamless navigation. Backend integration with Node.js and Express facilitated efficient data processing and inventory management, while MongoDB ensured scalability. Employing responsive design principles, I optimized the website for diverse devices, showcasing my proficiency in full-stack web development.",
+  //   visit: "https://furnik.netlify.app/",
   // },
 ];
 

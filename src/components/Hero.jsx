@@ -1,4 +1,4 @@
-import { animate, motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -52,7 +52,10 @@ const Hero = () => {
           >
             VEDANT YEDE
           </motion.h2>
-          <motion.h1 className="w-10 lg:w-full text-7xl font-bold" variants={textVariants}>
+          <motion.h1
+            className="w-10 lg:w-full text-7xl font-bold"
+            variants={textVariants}
+          >
             Frontend Developer
           </motion.h1>
           <motion.div className="" variants={textVariants}>
@@ -63,12 +66,12 @@ const Hero = () => {
               See the Latest Works
             </motion.button>
             <a href="#Contact">
-            <motion.button
-              className="z-50 80 p-5 ml-2 border rounded-md cursor-pointer bg-white text-black absolute"
-              variants={textVariants}
-            >
-              Contact Me
-            </motion.button>
+              <motion.button
+                className="z-50 80 p-5 ml-2 border rounded-md cursor-pointer bg-white text-black absolute"
+                variants={textVariants}
+              >
+                Contact Me
+              </motion.button>
             </a>
           </motion.div>
           <motion.img

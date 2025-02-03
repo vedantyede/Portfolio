@@ -20,19 +20,19 @@ const Parallax = ({ type }) => {
           : "bg-gradient-to-b from-darkBlueBg to-lightDarkBlueBg"
       }`}
     >
-      {/* <motion.div
+      <motion.div
         style={{ y: yBg2 }}
         className="bg-[url('./stars.png')] bg-cover bg-bottom w-full h-full absolute"
-      ></motion.div> */}
+      ></motion.div>
       <motion.div
         style={{ y: yBg2 }}
         className={`${
           type === "About Me"
-            ? 'bg-[url("./planets.png")]'
-            : 'bg-[url("./sun.png")]'
+            ? 'bg-[url("https://i.postimg.cc/WzTfNf0p/planets.png")]'
+            : 'bg-[url("https://i.postimg.cc/J7pQHnL5/sun.png")]'
         } bg-cover bg-bottom w-full h-full absolute`}
       ></motion.div>
-      <motion.div className="bg-[url('./mountains.png')] bg-cover sm:mt-0 bg-bottom w-full h-full absolute"></motion.div>
+      <motion.div className="bg-[url('https://i.postimg.cc/D0rb7xng/mountains.png')] bg-cover sm:mt-0 bg-bottom w-full h-full absolute"></motion.div>
       <motion.h1 style={{ y: yText }} className="">
         <div className="text-8xl text-slate-400 font-bold">
           {type == "About Me" ? "ABOUT ME" : "MY WORK"}
