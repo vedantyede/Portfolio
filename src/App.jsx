@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Parallax from "./components/Parallax";
@@ -7,6 +6,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -23,6 +23,9 @@ const App = () => {
       </section>
       <section id="Experience">
         <Experience />
+      </section>
+      <section id="Skills">
+        <Skills />
       </section>
       <section id="My Work">
         <Parallax type="My Work" />

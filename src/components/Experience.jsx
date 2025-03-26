@@ -1,5 +1,3 @@
-import React from "react";
-
 const Experience = () => {
   const data = {
     data: [
@@ -25,16 +23,11 @@ const Experience = () => {
     <div className="bg-gradient-to-b to-darkBlueBg from-lightDarkBlueBg overflow-hidden relative">
       <div className="h-screen w-full flex flex-col justify-center lg:justify-around items-center">
         <div className="text-5xl sm:text-8xl font-bold mb-10">EXPERIENCE</div>
-        {data.data.map((item) => (
-          <div className="flex flex-col lg:flex-row justify-center text-center items-center md:w-1/2 lg:gap-10">
+        {data.data.map((item, index) => (
+          <div key={index} className="flex flex-col lg:flex-row justify-center text-center items-center md:w-1/2 lg:gap-10">
             <div className={"sm:hidden"}>
               {item.present == false ? "^" : ""}
             </div>
-            <div
-              className={`${
-                item.present === false ? "" : "hidden"
-              } -mt-4 h-10 sm:h-3/4 bg-white w-[1px] sm:block`}
-            ></div>
             <div className="text-slate-400 text-sm">{item.date}</div>
             <div className="text-yellow-600 text-lg">{item.designation}</div>
             <div className="text-sm">{item.company}</div>

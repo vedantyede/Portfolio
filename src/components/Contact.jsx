@@ -54,7 +54,7 @@ const Contact = () => {
           <span>+91 9604065882</span>
         </motion.div>
       </motion.div>
-      <div className="flex-1 flex flex-col gap-10">
+      <div className="hidden flex-1 md:flex flex-col gap-10">
         <motion.div
           className="stroke-amber-500 absolute m-auto"
           initial={{ opacity: 1 }}

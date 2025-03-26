@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
@@ -16,13 +17,6 @@ const items = [
     desc: "Develop a furniture e-commerce website, using ReactJS, Tailwind CSS, and Framer Motion for the frontend, and Node.js with Express and MongoDB for the backend. This project prioritized a modern and intuitive user interface, ensuring seamless navigation. Backend integration with Node.js and Express facilitated efficient data processing and inventory management, while MongoDB ensured scalability. Employing responsive design principles, I optimized the website for diverse devices, showcasing my proficiency in full-stack web development.",
     visit: "https://furnik.netlify.app/",
   },
-  // {
-  //   id: 3,
-  //   title: "Weather App",
-  //   img: "https://images.unsplash.com/photo-1614480633894-f3b7f4bb0e76?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   desc: "Develop a furniture e-commerce website, using ReactJS, Tailwind CSS, and Framer Motion for the frontend, and Node.js with Express and MongoDB for the backend. This project prioritized a modern and intuitive user interface, ensuring seamless navigation. Backend integration with Node.js and Express facilitated efficient data processing and inventory management, while MongoDB ensured scalability. Employing responsive design principles, I optimized the website for diverse devices, showcasing my proficiency in full-stack web development.",
-  //   visit: "https://furnik.netlify.app/",
-  // },
 ];
 
 const Single = ({ item }) => {
@@ -35,7 +29,7 @@ const Single = ({ item }) => {
   return (
     <section id="Portfolio">
       <div className="flex items-center justify-center w-full h-screen overflow-hidden">
-        <div className="max-w-screen-xl h-full flex gap-14 items-center justify-center m-auto">
+        <div className="max-w-screen-xl h-full flex flex-col md:flex-row gap-60 md:gap-14 items-center justify-center m-auto">
           <div className="flex-1 h-1/2" ref={ref}>
             <img
               className="object-cover h-full w-full rounded-xl"
@@ -43,7 +37,7 @@ const Single = ({ item }) => {
               alt=""
             />
           </div>
-          <motion.div className="flex-1 flex flex-col" style={{ y }}>
+          <motion.div className="flex-1 flex flex-col justify-end items-center md:items-start m-10 md:m-0" style={{ y }}>
             <h2 className="text-xl">{item.title}</h2>
             <p className="text-slate-500 mt-2">{item.desc}</p>
             <a href={item.visit} target="_blank" rel="noreferrer">
@@ -71,7 +65,7 @@ const Portfolio = () => {
   return (
     <div className="relative" ref={ref}>
       <div className="sticky top-0 left-0 pt-10 text-center text-orange-500 font-bold text-5xl">
-        <h1>Featured Works</h1>
+        <h1 className="mt-10 md:mt-0">Featured Works</h1>
         <motion.div
           style={{ scaleX: scaleX }}
           className="h-3 bg-white my-2"

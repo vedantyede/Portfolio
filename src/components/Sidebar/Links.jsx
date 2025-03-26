@@ -25,7 +25,7 @@ const itemVariants = {
 };
 
 const Links = ({ setOpen }) => {
-  const items = ["Homepage", "About Me", "Education", "Experience", "My Work", "Contact"];
+  const items = ["Homepage", "About Me", "Education", "Experience", "Skills", "My Work", "Contact"];
   // const items = ["Homepage", "About Me", "Education", "Experience", "My Work", "Portfolio", "Contact"];
   return (
     <motion.ul
