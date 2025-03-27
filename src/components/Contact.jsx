@@ -1,5 +1,5 @@
-import { delay, motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
 
 const Contact = () => {
   const variants = {
@@ -29,6 +29,18 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleClick = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
+
+  const LETS_WORK_TOGETHER = "Let's Work Together"
+
   return (
     <motion.div
       ref={ref}
@@ -39,7 +51,7 @@ const Contact = () => {
     >
       <motion.div className="flex-1 flex flex-col gap-10" variants={variants}>
         <motion.h1 className="text-7xl font-bold">
-          Let's Work Together
+          {LETS_WORK_TOGETHER}
         </motion.h1>
         <motion.div className="" variants={variants}>
           <h2 className="font-bold">Mail</h2>
@@ -70,13 +82,13 @@ const Contact = () => {
           >
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={isInView && { pathLength: 1 }}
+              animate={isInView && { pathLength: 1, transitionEnd:{visibility:"hidden"} }}
               transition={{ duration: 2 }}
               d="M53.26 54.62a4.09 4.09 0 0 0 2.51-5.22l-1.36-3.87A4.1 4.1 0 0 0 49.18 43c-7.73 2.71-10.45-5-11.81-8.88S33.3 22.55 41 19.83a4.1 4.1 0 0 0 2.51-5.22l-1.36-3.87A4.1 4.1 0 0 0 37 8.23c-9.66 3.4-14.1 9.3-7.31 28.63S43.6 58 53.26 54.62z"
             />
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={isInView && { pathLength: 1 }}
+              animate={isInView && { pathLength: 1, transitionEnd:{zIndex:0} }}
               transition={{ duration: 1, delay: 2 }}
               d="M34.81 48.18A4 4 0 0 0 32 52a4 4 0 0 1-8 0 4 4 0 0 0-8 0 4 4 0 0 1-8 0"
             />
@@ -93,19 +105,25 @@ const Contact = () => {
             type="text"
             placeholder="Name"
             required
+            value={name}
+            onChange={(e)=>setName(e.target.value)}
           />
           <input
             className="p-5 bg-transparent border text-white rounded-md m-2"
             type="email"
             placeholder="Email"
             required
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <textarea
             className="p-5 bg-transparent border text-white rounded-md m-2"
             rows={8}
             placeholder="Message"
+            value={message}
+            onChange={(e)=>setMessage(e.target.value)}
           ></textarea>
-          <button className="bg-orange-500 border-none rounded-lg w-48 text-black m-2 p-2 cursor-pointer font-semibold">
+          <button onClick={handleClick} className="bg-orange-500 border-none rounded-lg w-48 text-black m-2 p-2 cursor-pointer font-semibold">
             Submit
           </button>
         </motion.form>

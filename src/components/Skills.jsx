@@ -76,6 +76,11 @@ const Skills = () => {
       url: "./git-icon.png",
       name: "GIT"
     },
+    {
+      id:16,
+      url:"./nextjs-icon-svgrepo-com.png",
+      name: "NextJs"
+    },
 
   ]
   return (
